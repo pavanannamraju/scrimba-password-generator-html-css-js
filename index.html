@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gen-pwd">
+
+        <div class="main">
+            <h2 class="text-light">Generate a </h2>
+            <h2 class="text-dark">random password</h2>
+            <p class="text-neutral">Never use an insecure password again</p>
+
+
+            <div class="options">
+                <div>
+                    <label for="no-of-chrs" class="text-light">Number of characters: </label><input type="number"
+                        name="no-of-chrs" id="no-of-chrs" value="10" min="8" max="25">
+                </div>
+                <div>
+                    <input type="checkbox" name="numbers-selected" id="numbers-selected"> <label for="numbers-selected"
+                        class="text-light">Numbers
+                        Selected</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="symbols-selected" id="symbols-selected"> <label for="symbols-selected"
+                        class="text-light">Symbols
+                        Selected</label>
+                </div>
+            </div>
+
+            <button id="generate-password" type="submit">Generate Passwords</button>
+        </div>
+
+        <hr>
+        <div class="passwords">
+            <div id="password-1" class="password"></div>
+            <div id="password-2" class="password"></div>
+        </div>
+        <div id="message" class="text-light"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
